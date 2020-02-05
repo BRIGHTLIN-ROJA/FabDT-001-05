@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+      <div class="container-fluid">
+        <nav class="navbar navbar-dark nav-top">
+          <a class="navbar-brand" href="#"><h1>Uzhavan</h1></a>
+          <a id="logut" href="#">Logout</a>
+        </nav>
+          <div class="row">
+            <div class="col-3">
+              <div  id="sidebar">
+                <ul>
+                  <li><a href="farmers.html">Farmers</a></li>
+                  <li><a href="stores.html">Stores</a></li>
+                  <li><a href="buyers.html">Buyers</a></li>
+                  <li><a href="enquries.html">Enquries</a></li>
+                </ul>
+              </div>  
+            </div>
+            <div class="col-9">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb main-top">
+                    <li class="breadcrumb-item">Home</li>
+                    <li class="breadcrumb-item">Stores</li>
+                </ol>
+              </nav>
+              <h1 class="farm-head">Stores
+                  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Create New</button>
+              </h1>
+              <table class="tab">
+                <tbody>
+                  <tr>
+                    <td id="head">ID</td>
+                    <td id="head">Owner ID</td>
+                    <td id="head">Owner Name</td>
+                    <td id="head">Store Name</td>
+                    <td id="head">Created On</td>
+                    <td id="head">Products Count</td>
+                    <td id="head">Leads Count</td>
+                    <td id="head">Action</td>
+                  </tr>
+                  <tr>    
+                    <td>1</td>
+                    <td>12</td>
+                    <td>Rathinasamy</td>
+                    <td>Rathnam</td>
+                    <td>10-1-2020</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>12</td>
+                    <td>Rathinasamy</td>
+                    <td>Rathnam</td>
+                    <td>10-1-2020</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>12</td>
+                    <td>Rathinasamy</td>
+                    <td>Rathnam</td>
+                    <td>10-1-2020</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>12</td>
+                    <td>Rathinasamy</td>
+                    <td>Rathnam</td>
+                    <td>10-1-2020</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>12</td>
+                    <td>Rathinasamy</td>
+                    <td>Rathnam</td>
+                    <td>10-1-2020</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>Rathinasamy</td>
+                    <td>Rathnam</td>
+                    <td>10-1-2020</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>12</td>
+                    <td>Rathinasamy</td>
+                    <td>Rathnam</td>
+                    <td>10-1-2020</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>12</td>
+                    <td>Rathinasamy</td>
+                    <td>Rathnam</td>
+                    <td>10-1-2020</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title" id="exampleModalLabel">Create Store</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                          <label for="store-name">Store Name</label>
+                          <input type="name" class="form-control" id="store-name" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                          <label for="owner-name">Owner Name</label>
+                          <input type="name" class="form-control" id="Owner-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="farmer-location">Location</label>
+                            <select class="custom-select form-control" required>
+                              <option value="">-Select-</option>
+                              <option value="1">Tirunelveli</option>
+                              <option value="2">Madurai</option>
+                              <option value="3">Trichy</option>
+                              <option value="3">Salem</option>
+                              <option value="3">Tuticorin</option>
+                              <option value="3">Kanyakumari</option>
+                              <option value="3">Erode</option>
+                              <option value="3">Thanjavur</option>
+                              <option value="3">Sivakasi</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Submit</button>
+                        <button type="cancel" class="btn btn-outline-secondary">Cancel</button>
+                      </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
