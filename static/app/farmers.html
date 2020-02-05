@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+      <div class="container-fluid">
+        <nav class="navbar navbar-dark nav-top">
+          <a class="navbar-brand" href="#"><h1>Uzhavan</h1></a>
+          <a id="logut" href="#">Logout</a>
+        </nav>
+          <div class="row">
+            <div class="col-3">
+              <div  id="sidebar">
+                <ul>
+                  <li><a href="#">Farmers</a></li>
+                  <li><a href="#">Stores</a></li>
+                  <li><a href="#">Buyers</a></li>
+                  <li><a href="#">Enquries</a></li>
+                </ul>
+              </div>  
+            </div>
+            <div class="col-9">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb main-top">
+                    <li class="breadcrumb-item">Home</li>
+                    <li class="breadcrumb-item">Farmers</li>
+                </ol>
+              </nav>
+              <h1 class="farm-head">Farmers
+                  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Create New</button>
+              </h1>
+              <table class="tab">
+                <tbody>
+                  <tr>
+                    <td id="head">ID</td>
+                    <td id="head">Name</td>
+                    <td id="head">Email ID</td>
+                    <td id="head">Location</td>
+                    <td id="head">Shops Count</td>
+                    <td id="head">Products Count</td>
+                    <td id="head">Leads Count</td>
+                    <td id="head">Action</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>mark@gmail.com</td>
+                    <td>tirunelveli</td>
+                    <td>2</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Mark</td>
+                    <td>mark@gmail.com</td>
+                    <td>tirunelveli</td>
+                    <td>2</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Mark</td>
+                    <td>mark@gmail.com</td>
+                    <td>tirunelveli</td>
+                    <td>2</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Mark</td>
+                    <td>mark@gmail.com</td>
+                    <td>tirunelveli</td>
+                    <td>2</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Mark</td>
+                    <td>mark@gmail.com</td>
+                    <td>tirunelveli</td>
+                    <td>2</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Mark</td>
+                    <td>mark@gmail.com</td>
+                    <td>tirunelveli</td>
+                    <td>2</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Mark</td>
+                    <td>mark@gmail.com</td>
+                    <td>tirunelveli</td>
+                    <td>2</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Mark</td>
+                    <td>mark@gmail.com</td>
+                    <td>tirunelveli</td>
+                    <td>2</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td><button class="btn btn-link btn-adjust" href="#">Edit</button><button class="btn btn-link btn-adjust" href="#">Delete</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title" id="exampleModalLabel">Create Farmer</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                          <label for="farmer-name">Name</label>
+                          <input type="name" class="form-control" id="farmer-name" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                          <label for="Email">Email ID</label>
+                          <input type="mail" class="form-control" id="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="farmer-location">Location</label>
+                            <select class="custom-select form-control" required>
+                              <option value="">-Select-</option>
+                              <option value="1">Palayamkottai</option>
+                              <option value="2">Seethaparpanallur</option>
+                              <option value="3">Shenkottai</option>
+                              <option value="3">Tenkasi</option>
+                              <option value="3">Pavoorchathram</option>
+                              <option value="3">Tirunelveli Town</option>
+                              <option value="3">Melapavoor</option>
+                              <option value="3">Keelapavoor</option>
+                              <option value="3">Surandai</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Submit</button>
+                        <button type="cancel" class="btn btn-outline-secondary">Cancel</button>
+                      </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
